@@ -6,6 +6,7 @@ import NavBar from "../Header/page"
 import SideBar from '../components/sideBar/page'
 import SearchBar from '../components/searchBar/page'
 import Slider from '../components/slider/page'
+import ProductCard from '../components/productCard/page'
 import banner from '../../../public/Storebanner.jpg'
 import Image from 'next/image'
 import popupImage from '../../../public/popup.png'
@@ -53,7 +54,7 @@ const Store = () => {
           </div>
           <div className="grid grid-cols-[1.2fr_3fr] gap-7 mt-2.5">
             {/* Filter */}
-            <div className="filter flex flex-col p-[20px_25px] border-r-gray-300 bg-[#fffefe] border-r-1 justify-center rounded-r-md">
+            <div className="filter flex flex-col p-[20px_25px] border-r-gray-300 bg-[#fffefe] border-r-1 justify-center rounded-r-md max-h-[180vh]">
               <h2 className='flex gap-3 mb-10'>
                 <MdOutlineFilterList className='text-gray-500 text-[25px]' />
                 <span className='text-gray-900 uppercase'>Filter</span>
@@ -100,7 +101,24 @@ const Store = () => {
               </div>
             </div>
 
-            {/* Products Display */}
+            <div className="products grid grid-cols-4 gap-6">
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+              <ProductCard image='/productCard/carPlaceholder-2.png' />
+            </div>
           </div>
         </section>
 
